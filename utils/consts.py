@@ -1,0 +1,1 @@
+leagueTableUrl = "https://api.api-futebol.com.br/v1/campeonatos/"
