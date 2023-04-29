@@ -16,6 +16,6 @@ Se uma partida ocorrerá entre os times **A** e **B**, então o número de gols 
 
 x = número médio de gols marcados por partida de A;
 
-y = número médio de gols sofridos por partida de A;
+y = número médio de gols sofridos por partida de B;
 
 E o mesmo serve para B.
