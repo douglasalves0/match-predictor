@@ -26,7 +26,7 @@ print(list(nofMatches.keys()))
 teamA = input("Sigla do primeiro time: ")
 teamB = input("Sigla do segundo time: ")
 
-aGoals, bGoals = axb(
+aGoals, bGoals, aScored, bScored, aConceded, bConceded = axb(
     teamScoredGoals[teamA],
     teamConcededGoals[teamA],
     teamScoredGoals[teamB],
@@ -35,4 +35,12 @@ aGoals, bGoals = axb(
     nofMatches[teamB]
 )
 
-print("Placar previsto: " + teamA + " " + str(aGoals) + " x " + str(bGoals) + " " + teamB)
+print()
+
+print(f"{teamA}: {aScored:.2f} gols/jogo")
+print(f"{teamA}: {aConceded:.2f} sofridos/jogo\n")
+
+print(f"{teamB}: {bScored:.2f} gols/jogo")
+print(f"{teamB}: {bConceded:.2f} sofridos/jogo\n")
+
+print(f"Placar previsto: {teamA} {aGoals:.2f} x {bGoals:.2f} {teamB}")

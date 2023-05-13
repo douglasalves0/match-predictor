@@ -9,4 +9,11 @@ def axb(aScoredGoals, aConcededGoals, bScoredGoals, bConcededGoals, aMatches, bM
     aExpectedGoals = (aAvgScoredGoals + bAvgConcededGoals) / 2
     bExpectedGoals = (bAvgScoredGoals + aAvgConcededGoals) / 2
 
-    return (aExpectedGoals, bExpectedGoals)
+    return (
+        aExpectedGoals, 
+        bExpectedGoals, 
+        aAvgScoredGoals,
+        bAvgScoredGoals,
+        aAvgConcededGoals,
+        bAvgConcededGoals
+    )
